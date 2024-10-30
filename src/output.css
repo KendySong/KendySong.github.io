@@ -2613,10 +2613,6 @@ input:checked + .toggle-bg {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
-.bg-gray-800\/30 {
-  background-color: rgb(31 41 55 / 0.3);
-}
-
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -3555,10 +3551,6 @@ input:checked + .toggle-bg {
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
-}
-
-.group:hover .group-hover\:bg-gray-800\/60 {
-  background-color: rgb(31 41 55 / 0.6);
 }
 
 .group:hover .group-hover\:bg-white\/50 {

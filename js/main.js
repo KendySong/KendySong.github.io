@@ -68,4 +68,10 @@ const instanceOptions = {
 
 const carousel = new Carousel(carouselElement, items, options, instanceOptions);
 
+document.getElementById('data-carousel-prev').onclick = () => {
+    carousel.prev();
+};
 
+document.getElementById('data-carousel-next').onclick = () => {
+    carousel.next();
+};

@@ -1,5 +1,3 @@
-const carouselElement = document.getElementById('carousel-example');
-
 const items = [
     {
         position: 0,
@@ -66,7 +64,7 @@ const instanceOptions = {
   override: true
 };
 
-const carousel = new Carousel(carouselElement, items, options, instanceOptions);
+const carousel = new Carousel(document.getElementById('carousel-example'), items, options, instanceOptions);
 
 document.getElementById('data-carousel-prev').onclick = () => {
     carousel.prev();
@@ -75,3 +73,9 @@ document.getElementById('data-carousel-prev').onclick = () => {
 document.getElementById('data-carousel-next').onclick = () => {
     carousel.next();
 };
+
+function AddCarousel()
+{
+    
+}
+

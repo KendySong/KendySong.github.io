@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,33 +26,51 @@
                 <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                     <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-500 rounded-lg bg-slate-800 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-slate-800 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">About me</a>
+                            <a href="#about-me" class="block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">About me</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Assets</a>
+                            <a href="#assets" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Assets</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+                            <a href="#projects" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                            <a href="#contact" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
   
-        <div class="flex flex-col items-center w-3/4 md:w-1/2 self-center mt-64 mb-96">
+        <!--About me-->
+        <div class="flex flex-col items-center w-3/4 md:w-1/2 self-center mt-64 mb-96" id="about-me">
             <h1 class="text-8xl mb-8 mt-2 font-bold text-white">Kendy <span class="text-blue-500">Song.</span></h1>
             <p class="text-xl text-white">
                 I'm a software developer who is passionate about computer graphics, procedural generation and maths
             </p>
         </div>
 
+        <!--Assets-->
+        <div class="flex flex-col justify-center items-center w-full pt-12 pb-16 bg-slate-700 -skew-y-3 mt-14 mb-14" id="assets">
+            <h1 class="text-4xl text-white font-bold mt-4 mb-8 skew-y-3">Assets</h1>
+            <div class="mb-8 skew-y-3 flex flex-col items-center">
+                
 
+                <figure class="w-1/2">
+                    <img class="h-auto max-w-full rounded-lg" src="/img/mc_0.png" alt="image description">
+                    <figcaption class="mt-2 text-md text-center text-white">Image</figcaption>
+                </figure>
+
+                <figure class="w-1/2">
+                    <img class="h-auto max-w-full rounded-lg" src="/img/mc_0.png" alt="image description">
+                    <figcaption class="mt-2 text-md text-center text-white">Image</figcaption>
+                </figure>
+
+            </div>
+        </div>
 
         <!--Projects col-->
-        <div class="flex items-center flex-col mt-8 mb-32">
+        <div class="flex items-center flex-col mt-8 mb-32" id="projects">
             <!--MC and FV-->
             <div class="flex flex-col items-center md:flex-row md:justify-center">
                 <div class="w-3/4 md:w-1/4 mt-4 mb-4 ml-16 mr-16">
@@ -583,7 +601,6 @@
                 </div>
             </div>
 
-
             <!--BH and PR-->
             <div class="flex flex-col items-center md:flex-row md:justify-center">
                 <div class="w-3/4 md:w-1/4 mt-4 mb-4 ml-16 mr-16">
@@ -983,45 +1000,43 @@
                 </div>
             </div>
         </div>
-
-        <div class="flex flex-col items-center w-full bg-slate-700">
-            <div class="mb-8">
-                <h1 class="text-3xl text-white font-bold mt-4 mb-8">How to contact me</h1>
+    
+        <!--Contact-->
+        <div class="flex flex-col justify-center items-center w-full h-96 bg-slate-800 skew-y-3" id="contact">
+            <div class="mb-8 -skew-y-3">
+                <h1 class="text-4xl text-white font-bold mt-4 mb-8">How to contact me</h1>
 
                 <div class="flex items-center">
                     <ion-icon name="logo-github" color="light" class="mt-4 mb-4"></ion-icon>
-                    <a href="https://github.com/KendySong" class="ml-3 text-lg text-white">Kendy Song</a>
+                    <a href="https://github.com/KendySong" class="ml-3 text-lg text-white font-bold">Kendy Song</a>
                 </div>
     
                 <div class="flex items-center">
                     <ion-icon name="mail-outline" color="light" class="mt-4 mb-4"></ion-icon>
-                    <a href="mailto:kndysong@gmail.com" class="ml-3 text-lg text-white">kndysong@gmail.com</a>
+                    <a href="mailto:kndysong@gmail.com" class="ml-3 text-lg text-white font-bold">kndysong@gmail.com</a>
                 </div>
             </div>
-            
-
         </div>
         
-    
-        <footer class="bg-slate-900 rounded-lg shadowm-4 mb-4 mt-12">
+        <footer class="bg-gray-900 rounded-lg shadowm-4 mb-4 mt-12">
             <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div class="sm:flex sm:items-center sm:justify-between">
                     <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                         <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Kendy Song</span>
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap text-white font-bold">Kendy <span class="text-blue-500">Song</span></span>
                     </a>
                     <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-400 sm:mb-0">
                         <li>
-                            <a href="#" class="hover:underline me-4 md:me-6">About me</a>
+                            <a href="#about-me" class="hover:underline me-4 md:me-6">About me</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline me-4 md:me-6">Assets</a>
+                            <a href="#assets" class="hover:underline me-4 md:me-6">Assets</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline me-4 md:me-6">Projects</a>
+                            <a href="#projects" class="hover:underline me-4 md:me-6">Projects</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline">Contact</a>
+                            <a href="#contact" class="hover:underline">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -1033,14 +1048,10 @@
     
 
     <!--
-        Carousel
-        Presentation
-        Project presentation
-        Contact 
-        Github
         FLowbite link menu
-        remake pictures
-        CC
+        Assets
+        Color
+        Projects description
     -->
 
     

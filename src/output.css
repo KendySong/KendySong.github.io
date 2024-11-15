@@ -1256,10 +1256,6 @@ input:checked + .toggle-bg {
   margin-bottom: 0.5rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -1487,10 +1483,6 @@ input:checked + .toggle-bg {
   width: 16rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -1505,10 +1497,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .max-w-screen-xl {
@@ -2941,6 +2929,11 @@ input:checked + .toggle-bg {
   line-height: 2.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
@@ -3820,10 +3813,6 @@ input:checked + .toggle-bg {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
   }
 
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {

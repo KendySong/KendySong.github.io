@@ -1,20 +1,1026 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/style.css" rel="stylesheet">
     <link href="/src/output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/logo.ico">
     <title>Kendy Song</title>
 </head>
 <body>
-    <h1 class="bg-red-400">
-        Hello world!!
-    </h1>
+    <div class="bg-gray-900 flex flex-col">
+        <nav class="bg-slate-800 border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="img/logo.png" class="h-8" alt="logo" />
+                    <!--<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Kendy Song</span>-->
+                </a>
+
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-500 rounded-lg bg-slate-800 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-slate-800 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#about-me" class="block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">About me</a>
+                        </li>
+                        <li>
+                            <a href="#assets" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Assets</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+  
+        <!--About me-->
+        <div class="flex flex-col items-center w-3/4 md:w-1/2 self-center mt-64 mb-96" id="about-me">
+            <h1 class="text-8xl mb-8 mt-2 font-bold text-white">Kendy <span class="text-blue-500">Song.</span></h1>
+            <p class="text-xl text-white">
+                I'm a software developer who is passionate about computer graphics, procedural generation and maths
+            </p>
+        </div>
+
+        <!--Assets-->
+        <div class="flex flex-col justify-center items-center w-full pt-12 pb-16 bg-slate-700 -skew-y-3 mt-14 mb-14" id="assets">
+            <h1 class="text-5xl text-white font-bold mt-4 mb-8 skew-y-3">Assets</h1>
+            <div class="mb-8 skew-y-3 flex flex-col items-center">
+
+                <!--Asset item-->
+                <div class="flex flex-col items-center">
+                    <div>
+                        <h1 class="font-bold text-3xl mb-4 text-blue-400">Chip8</h1>
+                        <img class="h-auto w-full rounded-lg" src="/img/assets/ch8_0.gif" alt="chip8 image">           
+                    </div>
+                    <figcaption class="mt-4 text-md text-white w-1/2">This CHIP-8 Emulator for Unity can run classic CHIP-8 games with adjustable settings like execution speed and pixel colors. It's a practical option for developers wanting to add simple arcade gameplay to their projects.</figcaption>               
+                   
+                </div>                  
+            </div>
+        </div>
+
+        <!--Projects col-->
+        <div class="flex items-center flex-col mt-8"> 
+            <div class="flex flex-col items-center md:flex-row justify-center">
+                <!--Minecraft-->
+                <div class="w-3/4 md:w-1/4 mt-4 mb-4 ml-16 mr-16">
+                    <h1 class="text-2xl font-bold text-blue-400">Minecraft Clone</h1>
+                    <div id="carousel-0" class="relative mt-4 mb-4">
+                        <div
+                            class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+                        >
+                            <div id="carousel-item-1-0" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/mc_0.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <div id="carousel-item-2-0" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/mc_1.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <div id="carousel-item-3-0" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/mc_2.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <div id="carousel-item-4-0" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/mc_3.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+                        >
+                            <button
+                                id="carousel-indicator-1-0"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                id="carousel-indicator-2-0"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                id="carousel-indicator-3-0"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 3"
+                            ></button>
+                            <button
+                                id="carousel-indicator-4-0"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 4"
+                            ></button>
+                        </div>
+                        <button
+                            id="data-carousel-prev-0"
+                            type="button"
+                            class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 1 1 5l4 4"
+                                    />
+                                </svg>
+                                <span class="hidden">Previous</span>
+                            </span>
+                        </button>
+                        <button
+                            id="data-carousel-next-0"
+                            type="button"
+                            class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m1 9 4-4-4-4"
+                                    />
+                                </svg>
+                                <span class="hidden">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="text-white h-44">
+                        A simple minecraft procedural generated map clone from scratch, with OpenGL
+                    </p>
+                </div>
+
+                <!--Function visualizer-->
+                <div class="w-3/4 md:w-1/4 mt-4 mb-4 ml-16 mr-16">
+                    <h1 class="text-2xl font-bold text-blue-400">Function Visualizer</h1>
+                    <div id="carousel-1" class="relative mt-4 mb-4">
+
+                        <div
+                            class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+                        >
+                        
+                            <div id="carousel-item-1-1" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/function-visualizer_0.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            
+                            <div id="carousel-item-2-1" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/function-visualizer_1.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            
+                            <div id="carousel-item-3-1" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/function-visualizer_2.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                        
+                            <div id="carousel-item-4-1" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/function-visualizer_3.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                        </div>                    
+                        <div
+                            class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+                        >
+                            <button
+                                id="carousel-indicator-1-1"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                id="carousel-indicator-2-1"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                id="carousel-indicator-3-1"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 3"
+                            ></button>
+                            <button
+                                id="carousel-indicator-4-1"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 4"
+                            ></button>
+                        </div>
+
+                        <button
+                            id="data-carousel-prev-1"
+                            type="button"
+                            class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 1 1 5l4 4"
+                                    />
+                                </svg>
+                                <span class="hidden">Previous</span>
+                            </span>
+                        </button>
+                        <button
+                            id="data-carousel-next-1"
+                            type="button"
+                            class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m1 9 4-4-4-4"
+                                    />
+                                </svg>
+                                <span class="hidden">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="text-white h-44">
+                        A real time 3D mathematical function interpreter that can show the customizable graph of the specified function, with OpenGL
+                    </p>
+                </div>
+            </div>
+
+            
+            <div class="flex flex-col items-center md:flex-row justify-center">
+                <!--Raytracer-->
+                <div class="w-3/4 md:w-1/4 mt-4 mb-4 ml-16 mr-16">
+                    <h1 class="text-2xl font-bold text-blue-400">Raytracer</h1>
+                    <div id="carousel-2" class="relative mt-4 mb-4">
+                        <!-- Carousel wrapper -->
+                        <div
+                            class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+                        >
+                            <!-- Item 1 -->
+                            <div id="carousel-item-1-2" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/raytracer_0.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 2 -->
+                            <div id="carousel-item-2-2" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/raytracer_1.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 3 -->
+                            <div id="carousel-item-3-2" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/raytracer_2.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 4 -->
+                            <div id="carousel-item-4-2" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/raytracer_2.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div
+                            class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+                        >
+                            <button
+                                id="carousel-indicator-1-2"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                id="carousel-indicator-2-2"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                id="carousel-indicator-3-2"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 3"
+                            ></button>
+                            <button
+                                id="carousel-indicator-4-2"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 4"
+                            ></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button
+                            id="data-carousel-prev-2"
+                            type="button"
+                            class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 1 1 5l4 4"
+                                    />
+                                </svg>
+                                <span class="hidden">Previous</span>
+                            </span>
+                        </button>
+                        <button
+                            id="data-carousel-next-2"
+                            type="button"
+                            class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m1 9 4-4-4-4"
+                                    />
+                                </svg>
+                                <span class="hidden">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="text-white h-44">
+                        A CPU based raytracer on spheres with pathtracing and a little material system, with SDL2
+                    </p>
+                </div>
+
+                <!--Chip8-->
+                <div class="w-3/4 md:w-1/4 mt-4 mb-4 ml-16 mr-16">
+                    <h1 class="text-2xl font-bold text-blue-400">Chip8 Emulator</h1>
+                    <div id="carousel-3" class="relative mt-4 mb-4">
+                        <!-- Carousel wrapper -->
+                        <div
+                            class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+                        >
+                            <!-- Item 1 -->
+                            <div id="carousel-item-1-3" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/chip8_0.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 2 -->
+                            <div id="carousel-item-2-3" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/chip8_1.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 3 -->
+                            <div id="carousel-item-3-3" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/chip8_2.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 4 -->
+                            <div id="carousel-item-4-3" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/chip8_3.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div
+                            class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+                        >
+                            <button
+                                id="carousel-indicator-1-3"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                id="carousel-indicator-2-3"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                id="carousel-indicator-3-3"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 3"
+                            ></button>
+                            <button
+                                id="carousel-indicator-4-3"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 4"
+                            ></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button
+                            id="data-carousel-prev-3"
+                            type="button"
+                            class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 1 1 5l4 4"
+                                    />
+                                </svg>
+                                <span class="hidden">Previous</span>
+                            </span>
+                        </button>
+                        <button
+                            id="data-carousel-next-3"
+                            type="button"
+                            class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m1 9 4-4-4-4"
+                                    />
+                                </svg>
+                                <span class="hidden">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="text-white h-44">
+                        A chip8 emulator that displays memory, stack and register and debbuging tools with OpenGL
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center md:flex-row justify-center">
+                <!--Barnes Hut-->
+                <div class="w-3/4 md:w-1/4 mt-4 mb-4 ml-16 mr-16">
+                    <h1 class="text-2xl font-bold text-blue-400">Barnes Hut simulation</h1>
+                    <div id="carousel-4" class="relative mt-4 mb-4" >
+                        <!-- Carousel wrapper -->
+                        <div
+                            class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+                        >
+                            <!-- Item 1 -->
+                            <div id="carousel-item-1-4" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/bh_0.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 2 -->
+                            <div id="carousel-item-2-4" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/bh_1.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 3 -->
+                            <div id="carousel-item-3-4" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/bh_2.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 4 -->
+                            <div id="carousel-item-4-4" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/bh_3.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div
+                            class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+                        >
+                            <button
+                                id="carousel-indicator-1-4"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                id="carousel-indicator-2-4"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                id="carousel-indicator-3-4"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 3"
+                            ></button>
+                            <button
+                                id="carousel-indicator-4-4"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 4"
+                            ></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button
+                            id="data-carousel-prev-4"
+                            type="button"
+                            class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 1 1 5l4 4"
+                                    />
+                                </svg>
+                                <span class="hidden">Previous</span>
+                            </span>
+                        </button>
+                        <button
+                            id="data-carousel-next-4"
+                            type="button"
+                            class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m1 9 4-4-4-4"
+                                    />
+                                </svg>
+                                <span class="hidden">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="text-white h-44">
+                        Simulation of particles movement with Barnes Hut algorithm for getting better performance and SFML
+                    </p>
+                </div>
+
+                <!--Perlin Noise-->
+                <div class="w-3/4 md:w-1/4 mt-4 mb-4 ml-16 mr-16">
+                    <h1 class="text-2xl font-bold text-blue-400">Perlin Noise</h1>
+                    <div id="carousel-5" class="relative mt-4 mb-4" >
+                        <!-- Carousel wrapper -->
+                        <div
+                            class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+                        >
+                            <!-- Item 1 -->
+                            <div id="carousel-item-1-5" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/perlin_0.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 2 -->
+                            <div id="carousel-item-2-5" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/perlin_1.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 3 -->
+                            <div id="carousel-item-3-5" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/perlin_2.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                            <!-- Item 4 -->
+                            <div id="carousel-item-4-5" class="hidden duration-700 ease-in-out">
+                                <img
+                                    src="/img/perlin_3.png"
+                                    class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                                />
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div
+                            class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+                        >
+                            <button
+                                id="carousel-indicator-1-5"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                            ></button>
+                            <button
+                                id="carousel-indicator-2-5"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 2"
+                            ></button>
+                            <button
+                                id="carousel-indicator-3-5"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 3"
+                            ></button>
+                            <button
+                                id="carousel-indicator-4-5"
+                                type="button"
+                                class="h-3 w-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 4"
+                            ></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button
+                            id="data-carousel-prev-5"
+                            type="button"
+                            class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 1 1 5l4 4"
+                                    />
+                                </svg>
+                                <span class="hidden">Previous</span>
+                            </span>
+                        </button>
+                        <button
+                            id="data-carousel-next-5"
+                            type="button"
+                            class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                        >
+                            <span
+                                class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                            >
+                                <svg
+                                    class="h-4 w-4 text-white"
+                                    aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 6 10"
+                                >
+                                    <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m1 9 4-4-4-4"
+                                    />
+                                </svg>
+                                <span class="hidden">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="text-white h-44">
+                        Interactive implementation of perlin noise, fractal and basic noise algorithm with SFML.
+                    </p>
+                </div>
+            </div>
+
+            <!--Steering behavior-->
+            <div class="w-3/4 md:w-1/4 mt-4 mb-4 ml-16 mr-16">
+                <h1 class="text-2xl font-bold text-blue-400">Steering Behavior</h1>
+                <div id="carousel-6" class="relative mt-4 mb-4" >
+                    <!-- Carousel wrapper -->
+                    <div
+                        class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+                    >
+                        <!-- Item 1 -->
+                        <div id="carousel-item-1-6" class="hidden duration-700 ease-in-out">
+                            <img
+                                src="/img/st_0.png"
+                                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                            />
+                        </div>
+                        <!-- Item 2 -->
+                        <div id="carousel-item-2-6" class="hidden duration-700 ease-in-out">
+                            <img
+                                src="/img/st_1.png"
+                                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                            />
+                        </div>
+                        <!-- Item 3 -->
+                        <div id="carousel-item-3-6" class="hidden duration-700 ease-in-out">
+                            <img
+                                src="/img/st_2.png"
+                                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                            />
+                        </div>
+                        <!-- Item 4 -->
+                        <div id="carousel-item-4-6" class="hidden duration-700 ease-in-out">
+                            <img
+                                src="/img/st_3.png"
+                                class="absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2"
+                            />
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div
+                        class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse"
+                    >
+                        <button
+                            id="carousel-indicator-1-6"
+                            type="button"
+                            class="h-3 w-3 rounded-full"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            id="carousel-indicator-2-6"
+                            type="button"
+                            class="h-3 w-3 rounded-full"
+                            aria-current="false"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            id="carousel-indicator-3-6"
+                            type="button"
+                            class="h-3 w-3 rounded-full"
+                            aria-current="false"
+                            aria-label="Slide 3"
+                        ></button>
+                        <button
+                            id="carousel-indicator-4-6"
+                            type="button"
+                            class="h-3 w-3 rounded-full"
+                            aria-current="false"
+                            aria-label="Slide 4"
+                        ></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                        id="data-carousel-prev-6"
+                        type="button"
+                        class="group absolute left-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                    >
+                        <span
+                            class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                        >
+                            <svg
+                                class="h-4 w-4 text-white"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 6 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M5 1 1 5l4 4"
+                                />
+                            </svg>
+                            <span class="hidden">Previous</span>
+                        </span>
+                    </button>
+                    <button
+                        id="data-carousel-next-6"
+                        type="button"
+                        class="group absolute right-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
+                    >
+                        <span
+                            class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white group-focus:ring-gray-800/70"
+                        >
+                            <svg
+                                class="h-4 w-4 text-white"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 6 10"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="m1 9 4-4-4-4"
+                                />
+                            </svg>
+                            <span class="hidden">Next</span>
+                        </span>
+                    </button>
+                </div>
+                <p class="text-white h-44">
+                    Interactive simulation of realistic movements of autonomous agents
+                </p>
+            </div>
+        </div>
+
+        <!--Contact-->
+        <div class="flex flex-col justify-center items-center w-full bg-slate-800 skew-y-3" id="contact">
+            <div class="mt-8 mb-8 -skew-y-3">
+                <h1 class="text-4xl text-white font-bold mt-4 mb-8">How to contact <span class="text-blue-400">me</span></h1>
+
+                <div class="flex items-center">
+                    <ion-icon name="logo-github" color="light" class="mt-4 mb-4"></ion-icon>
+                    <a href="https://github.com/KendySong" class="ml-3 text-lg text-white font-bold">Kendy Song</a>
+                </div>
     
-    <!--
-    Project presentation
-    Contact
-    CC
-    -->
+                <div class="flex items-center">
+                    <ion-icon name="mail-outline" color="light" class="mt-4 mb-4"></ion-icon>
+                    <a href="mailto:kndysong@gmail.com" class="ml-3 text-lg text-white font-bold">kndysong@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-900 rounded-lg shadowm-4 mb-4 mt-12">
+            <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <a class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                        <img src="img/logo.ico" class="h-8" alt="Flowbite Logo" />
+                        <span class="self-center text-2xl whitespace-nowrap text-white font-bold">Kendy <span class="text-blue-500">Song</span></span>
+                    </a>
+                    <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-400 sm:mb-0">
+                        <li>
+                            <a href="#about-me" class="hover:underline me-4 md:me-6">About me</a>
+                        </li>
+                        <li>
+                            <a href="#assets" class="hover:underline me-4 md:me-6">Assets</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="hover:underline me-4 md:me-6">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8"/>
+                <span class="block text-sm text-gray-500 sm:text-center">© 2024 <a href="https://flowbite.com/" class="hover:underline">Kendy Song</a>. All Rights Reserved.</span>
+            </div>
+        </footer>
+    </div>
+        
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

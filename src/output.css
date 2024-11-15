@@ -1427,6 +1427,10 @@ input:checked + .toggle-bg {
   height: 1rem;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1445,10 +1449,6 @@ input:checked + .toggle-bg {
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-96 {
-  height: 24rem;
 }
 
 .h-auto {
@@ -1485,6 +1485,10 @@ input:checked + .toggle-bg {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .w-\[this-is\\\\\] {

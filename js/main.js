@@ -1,5 +1,3 @@
-import { Carousel } from 'flowbite';
-
 for (let i = 0; i < 7; i++)
 {
     const items = [
